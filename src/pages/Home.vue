@@ -3,7 +3,14 @@ import Navbar from '@/components/base/Navbar.vue';
 </script>
 
 <template>
-    <Navbar />
+    <div class="page">
+        <Navbar />
+    </div>
 </template>
 
-<style></style>
+<style scoped>
+.page {
+    min-height: 100vh;
+    background-color: #070025;
+}
+</style>

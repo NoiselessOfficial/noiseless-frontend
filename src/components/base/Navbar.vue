@@ -3,7 +3,7 @@
 <template>
     <nav class="navbar">
         <div class="noiseless-logo">
-            <RouterLink to="/"><img src="/nono.ico" alt=""></RouterLink>
+            <RouterLink to="/"><img src="/images/nono.ico" alt=""></RouterLink>
             <p>Noiseless</p>
         </div>
 
@@ -15,7 +15,7 @@
                 <li>|</li>
                 <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
                 <RouterLink to="/login" href=""><li>Login</li></RouterLink>
-                <RouterLink to="/register" href=""><li>Register</li></RouterLink>
+                <RouterLink to="/register" href=""><li id="register-btn">Register</li></RouterLink>
             </ul>
         </div>
     </nav>
@@ -35,13 +35,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 0px 20px;
     background-color: transparent;
+    color: #FFFFFF;
 }
 
 nav .options ul {
     display: flex;
     flex-direction: row;
+    margin-top: 12px;
     padding: 8px;
     gap: 25px;
     font-size: 20px;
@@ -50,18 +52,37 @@ nav .options ul {
 
 .options ul a {
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .options ul a li:hover {
     font-size: 21px;
-    color: #575757;
+    color: #7bdff6;
+    transition: ease-in 0.2s;
+}
+
+.options #register-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    color: #000000;
+    background-color: #B1ECF9;
+}
+
+.options #register-btn:hover {
+    font-size: 18px;
+    background-color: #7bdff6;
+    color: #FFFFFF;
     transition: ease-in 0.2s;
 }
 
 .noiseless-logo {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
     gap: 20px;
 }
 
@@ -78,5 +99,6 @@ nav .options ul {
 .noiseless-logo p {
     margin-top: 6px;
     font-size: 24px;
+    font-weight: bold;
 }
 </style>
