@@ -11,11 +11,8 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
-<<<<<<< HEAD
     "lucide-vue-next": "^1.0.0",
-=======
     "@tailwindcss/vite": "^4.2.2",
->>>>>>> 5cd9910b7f6aa43b09e4dd3db1d63f8dce458642
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4"
