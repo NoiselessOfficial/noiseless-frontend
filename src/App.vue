@@ -5,6 +5,7 @@
 </template>
 
 <style>
+@import "tailwindcss";
 @font-face {
   font-family: 'JetBrains-Regular';
   src: url('/fonts/JetBrainsMono-Regular.ttf');
