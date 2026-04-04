@@ -1,104 +1,22 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+import NavItem from '@/components/base/NavItem.vue';
+</script>
 
 <template>
-    <nav class="navbar">
-        <div class="noiseless-logo">
-            <RouterLink to="/"><img src="/images/nono.ico" alt=""></RouterLink>
-            <p>Noiseless</p>
+    <nav class="flex flex-row justify-evenly items-center h-[60px] text-white">
+        <div class="flex flex-row gap-5">
+            <RouterLink to="/"><img src="/images/nono.ico" alt="" class="h-[40px] w-[40px] hover:scale-110 hover:drop-shadow-[0px_0px_6px_hsla(0,0%,100%)] transition duration-100"></RouterLink>
+            <p class="flex items-center text-[24px] font-bold">Noiseless</p>
         </div>
 
-        <div class="options">
-            <ul>
-                <RouterLink to="/donate"><li>Donate</li></RouterLink>
-                <RouterLink to="/support" href=""><li>Support</li></RouterLink>
-                <RouterLink to="/product" href=""><li>Product</li></RouterLink>
-                <li>|</li>
-                <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
-                <RouterLink to="/login" href=""><li>Login</li></RouterLink>
-                <RouterLink to="/register" href=""><li id="register-btn">Register</li></RouterLink>
-            </ul>
-        </div>
+        <ul class="flex flex-row p-2 gap-6 text-[20px]">
+            <NavItem to="/donate">Donate</NavItem>
+            <NavItem to="/support">Support</NavItem>
+            <NavItem to="/profile">Profile</NavItem>
+            <li>|</li>
+            <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
+            <NavItem to="/login">Login</NavItem>
+            <RouterLink to="/register" class="flex items-center justify-center w-[140px] h-[30px] rounded-[20px] p-2 bg-[#7bdff6] text-black hover:text-white hover:text-[18px] hover:transition duration-300">Register</RouterLink>
+        </ul>
     </nav>
 </template>
-
-<style>
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-*::selection {
-    background-color: transparent;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0px 20px;
-    background-color: transparent;
-    color: #FFFFFF;
-}
-
-nav .options ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 12px;
-    padding: 8px;
-    gap: 25px;
-    font-size: 20px;
-    list-style: none;
-}
-
-.options ul a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.options ul a li:hover {
-    font-size: 21px;
-    color: #7bdff6;
-    transition: ease-in 0.2s;
-}
-
-.options #register-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 30px;
-    border-radius: 20px;
-    color: #000000;
-    background-color: #B1ECF9;
-}
-
-.options #register-btn:hover {
-    font-size: 18px;
-    background-color: #7bdff6;
-    color: #FFFFFF;
-    transition: ease-in 0.2s;
-}
-
-.noiseless-logo {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    gap: 20px;
-}
-
-.noiseless-logo img {
-    height: 40px;
-    width: 40px;
-}
-
-.noiseless-logo img:hover {
-   transform: scale(1.1);
-   transition: ease-in 0.1s;
-}
-
-.noiseless-logo p {
-    margin-top: 6px;
-    font-size: 24px;
-    font-weight: bold;
-}
-</style>

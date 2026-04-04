@@ -14,4 +14,8 @@
 * {
   font-family: 'JetBrains-Regular';
 }
+
+*::selection {
+  background-color: none;
+}
 </style>
