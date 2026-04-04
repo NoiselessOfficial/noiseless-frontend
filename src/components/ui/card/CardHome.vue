@@ -25,6 +25,9 @@ defineProps({
 <style scoped>
 .a1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     .b1 {
         margin-right: 10%;
@@ -34,7 +37,7 @@ defineProps({
         width: 100%;
 
         h2 {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: #FFFFFF;
         }
 

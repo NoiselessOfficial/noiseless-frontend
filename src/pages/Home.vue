@@ -27,7 +27,7 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
                     </div>
                 </div>
                 <div class="b2">
-                    <h2>asdadssad</h2>
+                    <img src="/images/Laptop.png" alt="">
                 </div>
             </section>
         </div>
@@ -61,14 +61,14 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
             align-items: center;
             justify-content: center;
             gap: 10px;
-            width: 220px;
+            width: 320px;
             border: 1px solid #FFFFFF;
             padding: 3px;
             border-radius: 999px;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
 
             h1 {
-                font-size: 0.8rem;
+                font-size: 1.3rem;
                 color: #FFFFFF;
             }
 
@@ -76,8 +76,9 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
 
         .c2 {
             h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
                 color: #FFFFFF;
+                font-weight: bold;
             }
 
             h1 span {
@@ -87,18 +88,20 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
             h2 {
                 font-size: 1rem;
                 color: #FFFFFF;
-                margin-top: 2px;
+                margin-top: 5px;
                 font-weight: 200;
             }
         }
 
         .c3 {
+            width: 100%;
             display: flex;
             justify-content: left;
-            margin-top: 2vh;
+            margin-top: 5vh;
 
-            .card {
+            .card { 
                 width: 150px;
+                margin-right: 20px;
             }
         }
 
