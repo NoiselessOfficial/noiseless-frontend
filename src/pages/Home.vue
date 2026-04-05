@@ -16,9 +16,9 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
                         <h1>Helping +200 persons </h1>
                     </div>
                     <div class="c2">
-                        <h1>For a Delightful <br /> Experience <span>Noiseless</span></h1>
-                        <h2>Thinking in Misophonic people, Noiseless is a software that improves your way to
-                            listen in your routine. (RASCUNHO)</h2>
+                        <h1>For a Delightful and <span>Noiseless</span> Experience</h1>
+                        <h2>Made for Misophonic people, Noiseless is a software that improves your listening
+                            in your routine.</h2>
                     </div>
                     <div class="c3">
                         <CardHome class="card" titulo="Upload" descricao="Upload files" :icone="Users" />
@@ -27,7 +27,7 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
                     </div>
                 </div>
                 <div class="b2">
-                    <img src="/images/Laptop.png" alt="">
+                    <img src="/images/laptop.png" alt="">
                 </div>
             </section>
         </div>
