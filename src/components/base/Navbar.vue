@@ -15,8 +15,7 @@ import NavItem from '@/components/base/NavItem.vue';
             <NavItem to="/profile">Profile</NavItem>
             <li>|</li>
             <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
-            <NavItem to="/login">Login</NavItem>
-            <RouterLink to="/register" class="flex items-center justify-center w-[140px] h-[30px] rounded-[20px] p-2 bg-[#7bdff6] text-black hover:text-white hover:text-[18px] hover:transition duration-300">Register</RouterLink>
+            <NavItem to="/auth">Authentication</NavItem>
         </ul>
     </nav>
 </template>
