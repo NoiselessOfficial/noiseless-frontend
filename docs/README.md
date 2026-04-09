@@ -19,6 +19,7 @@ npm run type-check      # Verifica tipos
 
 COMMIT:
 
+git add .
 npx cz
 npm run release
 feature
