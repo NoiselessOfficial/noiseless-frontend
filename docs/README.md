@@ -22,4 +22,4 @@ COMMIT:
 git add .
 npx cz
 npm run release
-feature
+git push
