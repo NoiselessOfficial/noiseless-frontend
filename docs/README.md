@@ -18,3 +18,7 @@ npm run clean           # Limpa cache e build
 npm run type-check      # Verifica tipos
 
 COMMIT:
+
+npx cz
+git push
+npm run release

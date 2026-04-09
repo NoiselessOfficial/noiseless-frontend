@@ -1,16 +1,20 @@
-name: CI
+name: CI + Release
 
 on:
   push:
-    branches: ['*']
-  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # importante para versionamento
 
       - uses: actions/setup-node@v4
         with:
@@ -19,4 +23,12 @@ jobs:
       - run: npm install
       - run: npm run lint
       - run: npm run build
-      - run: npm run release
+
+      - name: Gerar release automático
+        run: npm run release
+
+      - name: Push das mudanças
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git push --follow-tags
