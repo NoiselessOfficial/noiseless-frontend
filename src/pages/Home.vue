@@ -28,7 +28,7 @@ import { BaseCard, CardHome } from '@/components/ui/card/index';
                     <div class="w-full flex justify-start mt-[5vh]">
                         <CardHome class="w-[150px] mr-5" titulo="Upload" descricao="Upload files" :icone="Users" />
                         <CardHome class="w-[150px] mr-5" titulo="Filter" descricao="Intelligent filtering"
-                            :icone="Users" />
+                            :icone="User" />
                         <CardHome class="w-[150px]" titulo="Listen" descricao="Listen delightfully" :icone="Users" />
                     </div>
                 </div>
