@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Navbar from '@/components/base/Navbar.vue'
 import { Users } from 'lucide-vue-next'
-import { Button, Tittle } from '@/components/ui/index'
+import { Button, Title } from '@/components/ui/index'
 import { BaseCard, CardHome, CardTec } from '@/components/ui/card/index'
 </script>
 
@@ -61,7 +61,7 @@ import { BaseCard, CardHome, CardTec } from '@/components/ui/card/index'
                 </div>
             </section>
             <section class="justify-center items-center flex flex-col">
-                <Tittle variant="v1" class="m-auto mb-10"> Install </Tittle>
+                <Title variant="v1" class="m-auto mb-10"> Install </Title>
                 <h1
                     class="bg-clip-text font-[900] text-transparent bg-gradient-to-r from-[#B1ECF9] to-white text-center text-5xl"
                 >
@@ -71,9 +71,9 @@ import { BaseCard, CardHome, CardTec } from '@/components/ui/card/index'
                 <Button variant="v1" class="mt-10 text-4xl text-[#070025]">
                     Install Now!
                 </Button>
-                <Tittle variant="v1" class="m-auto mt-15 mb-30">
+                <Title variant="v1" class="m-auto mt-15 mb-30">
                     Stacks
-                </Tittle>
+                </Title>
             </section>
             <section class="grid grid-cols-4 gap-40 w-4/5 m-auto mb-40">
                 <CardTec
