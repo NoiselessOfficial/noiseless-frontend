@@ -15,6 +15,9 @@ const authObject = new Authentication();
             <button class="w-1/2 min-h-[80px] border text-2xl text-[#04d1ff] hover:text-[#7bdff6] hover:cursor-pointer py-2 px-4 rounded-[20px] transition duration-200">Login</button>
             <button type="button" class="w-1/2 min-h-[80px] border text-2xl text-white hover:text-[#7bdff6] hover:cursor-pointer py-2 px-4 rounded-[20px] transition duration-200" v-on:click="authObject.alterarForm('signin', 'login')">Create account</button>
         </div>
+        <div class="w-3/4 flex items-center justify-center">
+            <button type="button" class="text-white hover:text-[#7bdff6] hover:cursor-pointer" v-on:click="authObject.alterarForm('forgot-password', 'login')">Forgot your password?</button>
+        </div>
         <fieldset class="w-3/4 border border-b-0 border-l-0 border-r-0 border-white">
             <legend align="center" class="px-6 text-xl text-white">or</legend>
         </fieldset>
