@@ -5,26 +5,26 @@ import parser from '@typescript-eslint/parser'
 import prettier from 'eslint-config-prettier'
 
 export default [
-    js.configs.recommended,
+  js.configs.recommended,
 
-    {
-        files: ['**/*.ts', '**/*.vue'],
-        languageOptions: {
-            parser,
-            parserOptions: {
-                ecmaVersion: 'latest',
-                sourceType: 'module'
-            }
-        },
-        plugins: {
-            '@typescript-eslint': ts
-        },
-        rules: {
-            ...ts.configs.recommended.rules
-        }
+  {
+    files: ['**/*.ts', '**/*.vue'],
+    languageOptions: {
+      parser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module'
+      }
     },
+    plugins: {
+      '@typescript-eslint': ts
+    },
+    rules: {
+      ...ts.configs.recommended.rules
+    }
+  },
 
-    ...vue.configs['flat/recommended'],
+  ...vue.configs['flat/recommended'],
 
-    prettier
+  prettier
 ]
