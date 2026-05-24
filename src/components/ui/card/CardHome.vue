@@ -1,5 +1,5 @@
 <script setup>
-import BaseCard from './BaseCard.vue';
+import BaseCard from './BaseCard.vue'
 
 defineProps({
     titulo: String,
@@ -38,18 +38,18 @@ defineProps({
 
         h2 {
             font-size: 1.2rem;
-            color: #FFFFFF;
+            color: #ffffff;
         }
 
         p {
             font-size: 0.5rem;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
 
     .b1 {
-        .icone  {
-            color: #FFFFFF;
+        .icone {
+            color: #ffffff;
         }
     }
 }

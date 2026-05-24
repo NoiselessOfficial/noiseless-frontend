@@ -4,12 +4,12 @@ import Home from '@/pages/Home.vue'
 import Authentication from '@/pages/Authentication.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {path: '/', component: Home},
-    {path: '/donate', component: Donation},
-    {path: '/auth', component: Authentication},
-  ]
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        { path: '/', component: Home },
+        { path: '/donate', component: Donation },
+        { path: '/auth', component: Authentication }
+    ]
 })
 
-export default router;
+export default router

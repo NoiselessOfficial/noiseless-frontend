@@ -12,7 +12,6 @@
     </div>
 </template>
 
-
 <style scoped>
 .card {
     background: none;

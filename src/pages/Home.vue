@@ -71,9 +71,7 @@ import { BaseCard, CardHome, CardTec } from '@/components/ui/card/index'
                 <Button variant="v1" class="mt-10 text-4xl text-[#070025]">
                     Install Now!
                 </Button>
-                <Title variant="v1" class="m-auto mt-15 mb-30">
-                    Stacks
-                </Title>
+                <Title variant="v1" class="m-auto mt-15 mb-30"> Stacks </Title>
             </section>
             <section class="grid grid-cols-4 gap-40 w-4/5 m-auto mb-40">
                 <CardTec
@@ -104,11 +102,13 @@ import { BaseCard, CardHome, CardTec } from '@/components/ui/card/index'
                     <h1
                         class="text-5xl bg-clip-text font-[900] text-transparent bg-gradient-to-r from-[#ffffff] from-10% to-[#7A7BD2]"
                     >
-                        You've reached the end of <br> the page.
+                        You've reached the end of <br />
+                        the page.
                     </h1>
                     <p class="mt-5 font-[900] text-1xl">
                         If you've made it this far, it's because you're
-                        interested.<br> So go ahead and register now.
+                        interested.<br />
+                        So go ahead and register now.
                     </p>
                     <Button variant="v2" class="mt-10">Install now</Button>
                 </div>

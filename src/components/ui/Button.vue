@@ -41,7 +41,7 @@ defineProps<{
     color: white;
     font-size: xx-large;
     padding: 1.5% 10%;
-    background: linear-gradient(45deg, #070025 10%, #7A7BD2 100%);
+    background: linear-gradient(45deg, #070025 10%, #7a7bd2 100%);
     width: fit-content;
 }
 

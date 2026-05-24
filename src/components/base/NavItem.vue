@@ -6,7 +6,10 @@ defineProps<{
 
 <template>
     <li>
-        <RouterLink :to="to" class="hover:text-[21px] hover:text-[#7bdff6] hover:transition duration-300">
+        <RouterLink
+            :to="to"
+            class="hover:text-[21px] hover:text-[#7bdff6] hover:transition duration-300"
+        >
             <slot />
         </RouterLink>
     </li>
