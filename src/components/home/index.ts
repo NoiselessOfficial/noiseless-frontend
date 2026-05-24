@@ -1,0 +1,4 @@
+export {default as HeroSection} from './heroSection.vue'
+export {default as InstallSection} from './installSection.vue'
+export {default as StackSection} from './stackSection.vue'
+export {default as EndSection} from './endSection.vue'
