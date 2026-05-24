@@ -2,19 +2,19 @@ export const environment = {
   development: {
     apiUrl: 'http://localhost:3000',
     debug: true,
-    analytics: false,
+    analytics: false
   },
   production: {
     apiUrl: 'https://api.com',
     debug: false,
-    analytics: true,
+    analytics: true
   },
   test: {
     apiUrl: 'http://localhost:3001',
     debug: true,
-    analytics: false,
+    analytics: false
   }
-};
+}
 
-export const currentEnv = import.meta.env.MODE as keyof typeof environment;
-export const config = environment[currentEnv] || environment.development;
+export const currentEnv = import.meta.env.MODE as keyof typeof environment
+export const config = environment[currentEnv] || environment.development

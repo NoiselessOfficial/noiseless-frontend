@@ -2,7 +2,7 @@ name: CI + Release
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   build:
@@ -12,23 +12,18 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # importante para versionamento
+          fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-      - run: npm install
-      - run: npm run lint
-      - run: npm run build
+      - name: Instalar dependências
+        run: npm ci
 
-      - name: Gerar release automático
-        run: npm run release
-
-      - name: Push das mudanças
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git push --follow-tags
+      - name: Build
+        run: npm run build
