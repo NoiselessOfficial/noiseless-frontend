@@ -2,9 +2,9 @@
 // Components
 import Navbar from '@/components/base/Navbar.vue'
 import DonationForm from '@/components/donate/DonateForm.vue'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const donateForm = ref(false);
+const donateForm = ref(false)
 </script>
 
 <template>
@@ -15,12 +15,21 @@ const donateForm = ref(false);
       <div v-if="!donateForm" class="flex flex-col gap-[10px]">
         <h1 class="text-[40px]">
           Make a
-          <a @click="donateForm = true" class="no-underline text-[#7bdff6] cursor-pointer">Donation</a>
+          <a
+            @click="donateForm = true"
+            class="no-underline text-[#7bdff6] cursor-pointer"
+            >Donation</a
+          >
         </h1>
         <h5>Help us to make the best experience ever.</h5>
 
-        <a @click="donateForm = true" class="no-underline text-[#7bdff6] hover:text-white cursor-pointer">
-          <div class="flex items-center justify-evenly flex-row h-[60px] w-[240px] bg-[hsla(0, 0%, 100%, 0.199)] border border-white rounded-[20px] hover:drop-shadow-[0px_0px_16px_hsl(0,0%,100%)] transition duration-100 hover:animate-pulse">
+        <a
+          @click="donateForm = true"
+          class="no-underline text-[#7bdff6] hover:text-white cursor-pointer"
+        >
+          <div
+            class="flex items-center justify-evenly flex-row h-[60px] w-[240px] bg-[hsla(0, 0%, 100%, 0.199)] border border-white rounded-[20px] hover:drop-shadow-[0px_0px_16px_hsl(0,0%,100%)] transition duration-100 hover:animate-pulse"
+          >
             <img class="h-10 w-10" src="/images/cash.ico" alt="" />
             <h1 class="text-[40px]">Donate</h1>
           </div>
