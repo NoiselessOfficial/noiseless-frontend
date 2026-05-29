@@ -16,7 +16,7 @@ export class DonationService {
       const data = await response.json();
       window.location.replace(data.sandbox_init_point);
     } catch (error) {
-      console.log(error);
+      alert('Oops! Something went wrong. Error: ' + error);
       this.router.push('/')
     }
   }
