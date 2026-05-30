@@ -1,16 +1,13 @@
 <script setup lang="ts">
-// Components
-import Navbar from '@/components/base/Navbar.vue'
+import defaultLayout from '../layouts/defaultLayout.vue'
+import ImageBackground from '@/components/donation/imageBackground.vue';
 import DonationForm from '@/components/donate/DonateForm.vue'
 import { ref } from 'vue'
-
 const donateForm = ref(false)
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#070025]">
-    <Navbar />
-
+  <defaultLayout>
     <div class="flex items-center justify-evenly h-[800px] text-white">
       <div v-if="!donateForm" class="flex flex-col gap-[10px]">
         <h1 class="text-[40px]">
@@ -46,5 +43,6 @@ const donateForm = ref(false)
         />
       </div>
     </div>
-  </div>
+  </defaultLayout>
+  <ImageBackground/>
 </template>

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'JetBrains-Regular';
+  src: url('/fonts/JetBrainsMono-Regular.ttf');
+}
+
+* {
+  font-family: 'JetBrains-Regular';
+}
+
+*::selection {
+  background-color: none;
+}
