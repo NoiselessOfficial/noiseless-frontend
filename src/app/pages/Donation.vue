@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import Navbar from '@/components/base/Navbar.vue'
+import defaultLayout from '../layouts/defaultLayout.vue'
+import ImageBackground from '@/components/donation/imageBackground.vue';
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#070025]">
-    <Navbar />
-
+  <defaultLayout>
     <div class="flex items-center justify-evenly h-[800px] text-white">
       <div class="flex flex-col gap-[10px]">
         <h1 class="text-[40px]">
@@ -32,5 +31,6 @@ import Navbar from '@/components/base/Navbar.vue'
         />
       </div>
     </div>
-  </div>
+  </defaultLayout>
+  <ImageBackground/>
 </template>
