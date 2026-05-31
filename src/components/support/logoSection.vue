@@ -6,7 +6,7 @@ import { Light } from '@/components/ui'
   <section class="relative flex flex-col gap-10">
         <Light class="bottom-48 left-45" />
     <img
-      class="w-100 mx-auto z-10"
+      class="w-100 mx-auto z-0"
       src="../../../public/images/support.png"
       alt=""
     />
