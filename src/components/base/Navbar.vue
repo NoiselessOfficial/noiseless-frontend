@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import NavItem from '@/components/base/NavItem.vue'
-</script>
+import { ref } from 'vue'
+import Profile from '@/app/pages/Profile.vue'
 
+const abrir = ref(false)
+</script>
 <template>
-  <nav class="flex justify-evenly text-white">
+  <nav class="flex justify-evenly text-white mt-5">
     <RouterLink to="/">
       <div class="flex flex-row gap-5 mr-50">
         <img
@@ -18,10 +21,16 @@ import NavItem from '@/components/base/NavItem.vue'
     <ul class="flex flex-row p-2 gap-6 text-[20px]">
       <NavItem to="/donate">Donate</NavItem>
       <NavItem to="/support">Support</NavItem>
-      <NavItem to="/profile">Profile</NavItem>
+      <li
+        class="hover:text-[#7bdff6] hover:transition duration-300 cursor-pointer"
+        @click="abrir = true"
+      >
+        Profile
+      </li>
       <li>|</li>
       <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
       <NavItem to="/auth">Authentication</NavItem>
     </ul>
   </nav>
+  <Profile v-model="abrir" />
 </template>
