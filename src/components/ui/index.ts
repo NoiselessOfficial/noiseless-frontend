@@ -1,2 +1,4 @@
 export { default as Button } from './Button.vue'
 export { default as Title } from './Title.vue'
+export { default as Light } from './Light.vue'
+export { default as NeveBg } from './NeveBg.vue'

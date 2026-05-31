@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import defaultLayout from '../layouts/defaultLayout.vue'
 import ImageBackground from '@/components/donation/imageBackground.vue';
-import DonationForm from '@/components/donate/DonateForm.vue'
+import DonationForm from '@/components/donation/DonateForm.vue'
 import { ref } from 'vue'
 const donateForm = ref(false)
 </script>

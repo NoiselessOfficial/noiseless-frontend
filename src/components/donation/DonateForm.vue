@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import DonateRadio from '@/components/donate/DonateRadio.vue';
+import DonateRadio from '@/components/donation/DonateRadio.vue';
 import { DonationService } from '@/services/DonationService';
 
 const active = defineModel('active')
