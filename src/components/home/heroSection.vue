@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Users } from 'lucide-vue-next'
-import { CardHome } from '@/components/ui/card'
+import CardHome from './cardHome.vue'
 </script>
 
 <template>
