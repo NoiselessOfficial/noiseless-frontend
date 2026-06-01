@@ -1,11 +1,33 @@
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import { Users } from 'lucide-vue-next'
 import CardHome from './cardHome.vue'
+
+const offset = ref(0)
+
+const handleScroll = () => {
+  requestAnimationFrame(() => {
+    offset.value = window.scrollY
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
   <section class="flex items-center w-full h-[80vh]">
-    <div class="h-full w-1/2 pl-[15vh] flex flex-col justify-center">
+    <div
+      class="h-full w-1/2 pl-[15vh] flex flex-col justify-center"
+      :style="{
+        transform: `translateY(${offset * 0.4}px)`
+      }"
+    >
       <div
         class="flex items-center justify-center gap-2.5 w-[320px] border border-white py-[3px] rounded-full mb-[30px]"
       >
@@ -52,7 +74,9 @@ import CardHome from './cardHome.vue'
       </div>
     </div>
 
-    <div class="b2">
+    <div class="b2"       :style="{
+        transform: `translateY(${offset * -0.3}px)`
+      }">
       <img src="/images/laptop.png" alt="" />
     </div>
   </section>
