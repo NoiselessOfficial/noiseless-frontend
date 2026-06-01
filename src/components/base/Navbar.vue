@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import Profile from '@/app/pages/Profile.vue'
 
 const abrir = ref(false)
+
 </script>
 <template>
   <nav class="flex justify-evenly text-white mt-5">
