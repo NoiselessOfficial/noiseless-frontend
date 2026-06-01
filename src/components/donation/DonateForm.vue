@@ -20,7 +20,7 @@ const donationServiceObject = new DonationService();
 const donate = () => {
   if (!email.value || typeof amount.value === 'string') return;
   // Precisamos verificar se o e-mail do usuário é válido antes de efetuar a doação.
-  donationServiceObject.donate(gateway.value, 'BRL', amount.value, 1, email.value);
+  donationServiceObject.donate(gateway.value, 'BRL', amount.value, email.value);
 }
 
 // Falta a lógica de formatação do saldo da doação. Exemplo: Transação Nubank, os números começam da esquerda (centavos) e vão para direita (reais).
