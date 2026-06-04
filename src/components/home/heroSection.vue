@@ -74,10 +74,30 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="b2"       :style="{
-        transform: `translateY(${offset * -0.3}px)`
-      }">
-      <img src="/images/laptop.png" alt="" />
+    <div class="banner">
+      <img
+        :style="{
+          transform: `translateY(${offset * -0.4}px)`
+        }"
+        src="/images/laptop.png"
+        alt=""
+      />
     </div>
   </section>
 </template>
+
+<style>
+.banner {
+  animation: flutuando 4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes flutuando {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+</style>
