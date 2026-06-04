@@ -14,7 +14,7 @@ export class DonationService {
         body: JSON.stringify({ gateway, currency_id, donation_amount, email })
       });
       const data = await response.json();
-      window.location.replace(data.sandbox_init_point);
+      window.location.replace(data.init_point);
     } catch (error) {
       alert('Oops! Something went wrong. Error: ' + error);
       this.router.push('/')
