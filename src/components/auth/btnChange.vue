@@ -6,7 +6,7 @@ const props = defineProps<{
 
 <template>
   <div
-    class="w-50 h-10 relative overflow-hidden flex rounded-3xl btnBase border-0 shadow-xl/20"
+    class="w-50 h-10 relative overflow-hidden flex rounded-3xl btnBase border-0 shadow-xl/20 cursor-pointer"
     :class="props.state ? 'btnL' : 'btnC'"
   >
     <h1 class="text-center my-auto mx-auto text-black text-[120%]">

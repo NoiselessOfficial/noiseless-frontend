@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {DefaultLayout} from '@/app/layouts'
+import DefaultLayout from '../layouts/defaultLayout.vue';
 import { HeroSection, InstallSection, StackSection, EndSection } from '@/components/home'
 </script>
 

@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import DefaultLayout from '../layouts/defaultLayout.vue'
+import NeveLayout from '../layouts/neveLayout.vue';
 import BaseForm from '@/components/auth/baseForm.vue'
-import NeveBg from '@/components/ui/NeveBg.vue'
 </script>
 
 <template>
-  <DefaultLayout>
+  <NeveLayout>
       <BaseForm />
-  </DefaultLayout>
-  <NeveBg/>
+  </NeveLayout>
 </template>
