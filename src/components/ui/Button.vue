@@ -1,5 +1,5 @@
 <template>
-  <button :class="['btn', variant]">
+  <button :class="['btn', variant]" type="button">
     <slot class="content" />
   </button>
 </template>
@@ -48,5 +48,19 @@ defineProps<{
 .v2::before {
   position: absolute;
   border-radius: inherit;
+}
+
+.v3 {
+  font-size: 120%;
+  color: black;
+  padding: 7px 30px;
+  flex: 1;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 1px 1px 4px #a3a3a3;
+  transition: all 0.4s;
+  background-color: #d4f5ff;
+} :hover{
+  scale: 105%;
 }
 </style>
