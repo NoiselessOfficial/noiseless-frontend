@@ -9,8 +9,12 @@ const props = defineProps<{
     class="w-50 h-10 relative overflow-hidden flex rounded-3xl btnBase border-0 shadow-xl/20 cursor-pointer"
     :class="props.state ? 'btnL' : 'btnC'"
   >
-    <h1 class="text-center my-auto mx-auto text-black text-[120%]">
-      {{ state ? 'login' : 'cadastro' }}
+    <h1 class="absolute top-1 right-6 my-auto text-black text-[120%] text-right transition-all duration-400" :class="!state ? 'opacity-0' : 'opacity-100'">
+      Login
+    </h1>
+
+    <h1 class="absolute top-1 left-6 my-auto text-black text-[120%] text-left transition-all duration-400" :class="state ? 'opacity-0' : 'opacity-100'">
+      Cadastro
     </h1>
 
     <div
