@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import InputForm from './inputForm.vue'
-import Button from '../ui/Button.vue'
+import Button from '../ui/button.vue'
 import EndForm from './endForm.vue'
 
 const props = defineProps<{

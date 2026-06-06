@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NavItem from '@/components/base/NavItem.vue'
+import NavItem from '@/components/base/navItem.vue'
 import { ref } from 'vue'
 import Profile from '@/app/pages/Profile.vue'
 

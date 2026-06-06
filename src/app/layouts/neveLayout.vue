@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Navbar from '@/components/base/Navbar.vue'
-import ImageBg from '@/components/base/ImageBg.vue';
-import NeveBg from '@/components/ui/NeveBg.vue';
+import Navbar from '@/components/base/navbar.vue'
+import ImageBg from '@/components/base/imageBg.vue';
+import NeveBg from '@/components/ui/neveBg.vue';
 </script>
 
 <template>
