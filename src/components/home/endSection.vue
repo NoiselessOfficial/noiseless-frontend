@@ -4,7 +4,7 @@ import { Button } from '@/components/ui'
 
 <template>
   <section
-    class="bg-gradient-to-r from-[#070025] from-20% to-[#7A7BD2] text-white pt-20 pb-20 p-10 md:pl-20 grid grid-cols-1 md:grid-cols-2 gap-10"
+    class="bg-linear-to-r from-[#070025] from-20% to-[#7A7BD2] text-white my-20 py-20 p-10 md:pl-20 grid grid-cols-1 md:grid-cols-2 gap-10"
   >
     <div>
       <h1

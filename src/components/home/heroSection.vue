@@ -21,7 +21,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="w-full min-h-[70vh] flex flex-col lg:flex-row items-center">
+  <section class="w-full min-h-[70vh] flex flex-col lg:flex-row items-center mt-10 lg:mt-0">
 
     <div
       class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 lg:py-12"
@@ -41,7 +41,7 @@ onUnmounted(() => {
       <h1 class="text-3xl md:text-5xl font-black text-white leading-tight">
         For a Delightful and
         <span
-          class="bg-clip-text text-transparent bg-gradient-to-r from-[#B1ECF9] to-white"
+          class="bg-clip-text text-transparent bg-linear-to-r from-[#B1ECF9] to-white"
         >
           Noiseless
         </span>

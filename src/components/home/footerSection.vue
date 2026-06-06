@@ -5,7 +5,7 @@ import { socialMedias } from '@/constants/links';
 
 <template>
   <div
-    class="border-t-2 border-white mt-30 py-10 flex px-20 gap-10 justify-between items-center md:flex-row flex-wrap"
+    class="border-t-2 border-white py-10 flex px-20 gap-10 justify-between items-center md:flex-row flex-wrap"
   >
     <div class="flex flex-row gap-5">
       <img

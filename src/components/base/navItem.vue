@@ -1,4 +1,8 @@
 <script setup lang="ts">
+defineOptions({
+  inheritAttrs: false
+})
+
 defineProps<{
   to: string
 }>()
@@ -8,7 +12,11 @@ defineProps<{
   <li>
     <RouterLink
       :to="to"
-      class=" hover:text-[#7bdff6] hover:transition duration-300" active-class="text-[#7bdff6]"
+      v-bind="$attrs"
+      :class="[
+        'flex transition duration-300 hover:text-[#7bdff6]',
+        $attrs.class
+      ]"
     >
       <slot />
     </RouterLink>

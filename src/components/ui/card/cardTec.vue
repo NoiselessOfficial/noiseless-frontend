@@ -24,7 +24,7 @@ defineProps({
         <component class="icone text-[#B1ECF9]" :size="40" :is="icone" />
       </div>
       <div class="">
-        <h2 class="text-white text-2xl font-[900] mt-1">
+        <h2 class="text-white text-2xl font-extrabold mt-1">
           {{ titulo }}
         </h2>
         <p class="text-white">{{ descricao }}</p>

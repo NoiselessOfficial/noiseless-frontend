@@ -6,7 +6,7 @@ import { Button, Title } from '@/components/ui';
   <section class="justify-center items-center flex flex-col">
     <Title variant="v1" class="m-auto mb-10"> Install </Title>
     <h1
-      class="bg-clip-text font-[900] text-transparent bg-gradient-to-r from-[#B1ECF9] to-white text-center text-5xl"
+      class="bg-clip-text font-extrabold text-transparent bg-linear-to-r from-[#B1ECF9] to-white text-center text-5xl"
     >
       Open source misophonia <br />
       software
