@@ -10,13 +10,13 @@ defineProps({
 
 <template>
   <BaseCard>
-    <div class="a1">
+    <div class="flex justify-center w-full text-white gap-2 items-center">
       <div class="b1">
         <component class="icone" :is="icone" />
       </div>
-      <div class="b2">
-        <h2>{{ titulo }}</h2>
-        <p class="text-white text-[6px] md:text-[8px]">{{ descricao }}</p>
+      <div class="">
+        <h2 class=" md:text-2xl">{{ titulo }}</h2>
+        <p class="text-[6px] md:text-[10px] w-full">{{ descricao }}</p>
       </div>
     </div>
   </BaseCard>
@@ -31,15 +31,6 @@ defineProps({
 
   .b1 {
     margin-right: 10%;
-  }
-
-  .b2 {
-    width: 100%;
-
-    h2 {
-      font-size: 1.2rem;
-      color: #ffffff;
-    }
   }
 
   .b1 {

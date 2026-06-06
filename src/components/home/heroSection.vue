@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Users } from 'lucide-vue-next'
+import { Upload, Filter, Music, Users } from 'lucide-vue-next'
 import CardHome from './cardHome.vue'
 
 const offset = ref(0)
@@ -55,22 +55,22 @@ onUnmounted(() => {
 
       <div class="flex gap-4 mt-10">
         <CardHome
-          class="w-[140px]"
+          class=""
           titulo="Upload"
           descricao="Upload files"
-          :icone="Users"
+          :icone="Upload"
         />
         <CardHome
-          class="w-[140px]"
+          class=""
           titulo="Filter"
           descricao="Intelligent filtering"
-          :icone="Users"
+          :icone="Filter"
         />
         <CardHome
-          class="w-[140px]"
+          class=""
           titulo="Listen"
           descricao="Listen delightfully"
-          :icone="Users"
+          :icone="Music"
         />
       </div>
     </div>

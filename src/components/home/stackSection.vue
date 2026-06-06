@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Users } from 'lucide-vue-next'
+import { Users, Coffee, AudioWaveform, Layout } from 'lucide-vue-next'
 import { CardTec } from '@/components/ui/card';
 </script>
 
@@ -8,17 +8,17 @@ import { CardTec } from '@/components/ui/card';
     <CardTec
       titulo="Java"
       descricao="High-level object-oriented language which provides us a fully cross-platform development with WORA"
-      :icone="Users"
+      :icone="Coffee"
     />
     <CardTec
       titulo="JavaFX"
       descricao="JavaFX is a set of graphics and media packages for building desktop applications"
-      :icone="Users"
+      :icone="Layout"
     />
     <CardTec
       titulo="DSP"
       descricao="Digital Signal Processing (DSP) is the mathematical manipulation of analog signals to digital signals"
-      :icone="Users"
+      :icone="AudioWaveform"
     />
     <CardTec
       titulo="XXXXX"
