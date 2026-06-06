@@ -12,7 +12,7 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
@@ -21,52 +21,53 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="flex items-center w-full h-[80vh]">
+  <section class="w-full min-h-[80vh] flex flex-col lg:flex-row items-center">
+
     <div
-      class="h-full w-1/2 pl-[15vh] flex flex-col justify-center"
+      class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 py-12 lg:py-0"
       :style="{
         transform: `translateY(${offset * 0.4}px)`
       }"
     >
       <div
-        class="flex items-center justify-center gap-2.5 w-[320px] border border-white py-[3px] rounded-full mb-[30px]"
+        class="flex items-center gap-2 border border-white/20 px-4 py-1 rounded-full w-fit mb-6"
       >
-        <Users color="white" />
-        <h1 class="text-[1.3rem] text-white">Helping +200 persons</h1>
-      </div>
-
-      <div>
-        <h1 class="text-[3rem] text-white font-[900]">
-          For a Delightful and
-          <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-[#B1ECF9] to-white"
-          >
-            Noiseless
-          </span>
-          Experience
+        <Users class="w-4 h-4 text-white" />
+        <h1 class="text-sm md:text-base text-white">
+          Helping +200 persons
         </h1>
-
-        <h2 class="text-[1rem] text-white mt-[5px] font-[200]">
-          Made for Misophonic people, Noiseless is a software that improves your
-          listening in your routine.
-        </h2>
       </div>
 
-      <div class="w-full flex justify-start mt-[5vh]">
+      <h1 class="text-3xl md:text-5xl font-black text-white leading-tight">
+        For a Delightful and
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[#B1ECF9] to-white"
+        >
+          Noiseless
+        </span>
+        Experience
+      </h1>
+
+      <h2 class="text-sm md:text-base text-white/70 mt-3 max-w-xl">
+        Made for Misophonic people, Noiseless is a software that improves your
+        listening in your routine.
+      </h2>
+
+      <div class="flex flex-wrap gap-4 mt-10">
         <CardHome
-          class="w-[150px] mr-5"
+          class="w-[140px]"
           titulo="Upload"
           descricao="Upload files"
           :icone="Users"
         />
         <CardHome
-          class="w-[150px] mr-5"
+          class="w-[140px]"
           titulo="Filter"
           descricao="Intelligent filtering"
           :icone="Users"
         />
         <CardHome
-          class="w-[150px]"
+          class="w-[140px]"
           titulo="Listen"
           descricao="Listen delightfully"
           :icone="Users"
@@ -74,30 +75,27 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="banner">
+    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
       <img
-        :style="{
-          transform: `translateY(${offset * -0.4}px)`
-        }"
         src="/images/laptop.png"
-        alt=""
+        alt="laptop"
+        class="w-full "
+        :style="{
+          transform: `translateY(${offset * -0.3}px)`
+        }"
       />
     </div>
+
   </section>
 </template>
 
 <style>
-.banner {
+.banner-float {
   animation: flutuando 4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
 @keyframes flutuando {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 </style>

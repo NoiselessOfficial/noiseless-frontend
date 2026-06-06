@@ -1,5 +1,5 @@
 <template>
-  <button :class="['btn', variant]" type="button">
+  <button :class="['btn', variant]" type="button" class="cursor-pointer transition-all duration-300">
     <slot class="content" />
   </button>
 </template>
@@ -39,10 +39,10 @@ defineProps<{
   border-radius: 50em;
   background: transparent;
   color: white;
-  font-size: xx-large;
   padding: 1.5% 10%;
   background: linear-gradient(45deg, #070025 10%, #7a7bd2 100%);
   width: fit-content;
+  border: 1px solid white;
 }
 
 .v2::before {
@@ -62,5 +62,9 @@ defineProps<{
   background-color: #d4f5ff;
 } :hover{
   scale: 105%;
+}
+
+@media (max-width: 700px)  {
+
 }
 </style>
