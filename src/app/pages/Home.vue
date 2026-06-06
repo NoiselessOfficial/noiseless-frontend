@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DefaultLayout from '../layouts/defaultLayout.vue';
-import { HeroSection, InstallSection, StackSection, EndSection } from '@/components/home'
+import { HeroSection, InstallSection, StackSection, EndSection, FooterSection } from '@/components/home'
 </script>
 
 <template>
@@ -9,5 +9,6 @@ import { HeroSection, InstallSection, StackSection, EndSection } from '@/compone
     <InstallSection />
     <StackSection />
     <EndSection />
+    <FooterSection />
   </DefaultLayout>
 </template>

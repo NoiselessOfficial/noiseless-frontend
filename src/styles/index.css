@@ -5,6 +5,10 @@
   src: url('/fonts/JetBrainsMono-Regular.ttf');
 }
 
+body{
+  background-color: #070025;
+}
+
 * {
   font-family: 'JetBrains-Regular';
   scroll-behavior: smooth;
