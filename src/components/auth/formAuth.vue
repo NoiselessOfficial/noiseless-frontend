@@ -22,13 +22,13 @@ function enviar() {
 <template>
   <div :state="state" class="w-full">
     <form id="form" class="flex flex-col gap-3 w-full relative">
-      <InputForm pch="email" lab="Email" v-model="email" type="email" />
-      <InputForm pch="senha" lab="Senha" v-model="senha" type="password" />
+      <InputForm pch="E-mail" lab="E-mail" v-model="email" type="email" />
+      <InputForm pch="Password" lab="Password" v-model="senha" type="password" />
       <transition name="expand" class="relative">
         <div v-if="!state">
           <InputForm
-            pch="confirmar senha"
-            lab="Confirmar Senha"
+            pch="Confirm Password"
+            lab="Confirm Password"
             v-model="senhaC"
             type="password"
           />
@@ -39,7 +39,7 @@ function enviar() {
         <button class="bg-black/40 w-fit h-fit p-2 rounded-full">
           <img src="https://www.google.com/favicon.ico" alt="Google" />
         </button>
-        <Button variant="v3" @click="enviar" class="my-auto">Confirmar</Button>
+        <Button variant="v3" @click="enviar" class="my-auto">Submit</Button>
       </div>
     </form>
   </div>

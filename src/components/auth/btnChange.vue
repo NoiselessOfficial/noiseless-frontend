@@ -14,7 +14,7 @@ const props = defineProps<{
     </h1>
 
     <h1 class="absolute top-1 left-6 my-auto text-black text-[120%] text-left transition-all duration-400" :class="state ? 'opacity-0' : 'opacity-100'">
-      Cadastro
+      Register
     </h1>
 
     <div

@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import NavItem from '@/components/base/navItem.vue'
-import { ref } from 'vue'
-import Profile from '@/app/pages/Profile.vue'
-
-const abrir = ref(false)
-
+import NavItem from '@/components/base/navItem.vue';
 </script>
 
 <template>
@@ -21,18 +16,12 @@ const abrir = ref(false)
     </RouterLink>
 
     <ul class="flex flex-row p-2 gap-6 text-[20px]">
+      <NavItem to="/docs">Documentation</NavItem>
+      <li>|</li>
       <NavItem to="/donate">Donate</NavItem>
-      <NavItem to="/support">Support</NavItem>
-      <li
-        class="hover:text-[#7bdff6] hover:transition duration-300 cursor-pointer"
-        @click="abrir = true"
-      >
-        Profile
-      </li>
       <li>|</li>
       <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
       <NavItem to="/auth">Authentication</NavItem>
     </ul>
   </nav>
-  <Profile v-model="abrir" />
 </template>
