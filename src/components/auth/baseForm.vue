@@ -8,9 +8,10 @@ const stateL = ref(true)
 
 <template>
     <div
-      class="flex m-auto w-130 flex-col items-center mt-20 p-10 rounded-3xl border-2 border-white"
+      class="flex m-auto w-130 flex-col items-center mt-20 p-10 rounded-3xl font-sans"
     >
       <BtnChange @click="stateL = !stateL" :state="stateL" class="mb-10 hover:scale-[110%]"/>
       <FormAuth :state="stateL" />
     </div>
 </template>
+

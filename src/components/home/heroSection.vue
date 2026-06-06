@@ -21,7 +21,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="w-full min-h-[80vh] flex flex-col lg:flex-row items-center">
+  <section class="w-full min-h-[70vh] flex flex-col lg:flex-row items-center">
 
     <div
       class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 lg:py-12"
