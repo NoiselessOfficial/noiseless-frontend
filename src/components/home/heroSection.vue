@@ -24,7 +24,7 @@ onUnmounted(() => {
   <section class="w-full min-h-[80vh] flex flex-col lg:flex-row items-center">
 
     <div
-      class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 py-12 lg:py-0"
+      class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 lg:py-12"
       :style="{
         transform: `translateY(${offset * 0.4}px)`
       }"
@@ -53,7 +53,7 @@ onUnmounted(() => {
         listening in your routine.
       </h2>
 
-      <div class="flex flex-wrap gap-4 mt-10">
+      <div class="flex gap-4 mt-10">
         <CardHome
           class="w-[140px]"
           titulo="Upload"
@@ -81,7 +81,7 @@ onUnmounted(() => {
         alt="laptop"
         class="w-full "
         :style="{
-          transform: `translateY(${offset * -0.3}px)`
+          transform: `translateY(${offset * -0.3}px)`, opacity: 1 - offset / 400
         }"
       />
     </div>

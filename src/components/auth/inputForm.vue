@@ -10,12 +10,12 @@ const model = defineModel<string>()
 
 <template>
   <div>
-    <label>{{ props.lab }}</label>
+    <label class="text-white">{{ props.lab }}</label>
     <input
       :type="props.type"
       :placeholder="props.pch"
       v-model="model"
-      class="bg-[#d4f5ff] w-full p-3 shadow-xl"
+      class="bg-[#d4f5ff] w-full p-3 shadow-xl rounded-2xl"
     />
   </div>
 </template>

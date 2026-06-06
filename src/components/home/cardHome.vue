@@ -16,7 +16,7 @@ defineProps({
       </div>
       <div class="b2">
         <h2>{{ titulo }}</h2>
-        <p>{{ descricao }}</p>
+        <p class="text-white text-[6px] md:text-[8px]">{{ descricao }}</p>
       </div>
     </div>
   </BaseCard>
@@ -38,11 +38,6 @@ defineProps({
 
     h2 {
       font-size: 1.2rem;
-      color: #ffffff;
-    }
-
-    p {
-      font-size: 0.5rem;
       color: #ffffff;
     }
   }
