@@ -20,15 +20,15 @@ import { socialMedias } from '@/constants/links';
     <div class="text-white flex gap-10 flex-col lg:flex-row">
       <div class="flex gap-2">
         <Mail />
-        <h1>projectnoiseless@gmai.com</h1>
-      </div>
-      <div class="flex gap-2">
-        <Instagram />
-        <h1>projNoiseless</h1>
+        <a href="mailto:noiselessofficial@outlook.com">noiselessofficial@outlook.com</a>
       </div>
       <div class="flex gap-2">
         <Github />
-        <h1>NoiselessOfficial</h1>
+        <a href="https://github.com/NoiselessOfficial">NoiselessOfficial</a>
+      </div>
+      <div class="flex gap-2">
+        <Instagram />
+        <a href="#">NoiselessOfficial</a>
       </div>
     </div>
   </div>
