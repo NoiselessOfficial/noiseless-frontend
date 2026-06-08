@@ -18,7 +18,7 @@ import { User } from 'lucide-vue-next'
 
     <ul class="flex gap-6 text-[20px] items-center">
       <a href="https://github.com/NoiselessOfficial" target="_"
-        ><span class="font-bold hover:text-[#7bdff6] hover:border-[#7bdff6] border-2 border-white px-4 py-1 rounded-3xl">Docs</span></a
+        ><span class="font-bold hover:text-[#7bdff6] hover:border-[#7bdff6] border-2 border-white px-4 py-1 rounded-3xl">Documentation</span></a
       >
       <li>|</li>
       <NavItem to="/donate" active-class="text-[#7bdff6]" class="py-1">Donate</NavItem>
