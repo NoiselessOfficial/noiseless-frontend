@@ -81,7 +81,7 @@ onUnmounted(() => {
         alt="laptop"
         class="w-full "
         :style="{
-          transform: `translateY(${offset * -0.3}px)`, opacity: 1 - offset / 400
+          transform: `translateY(${offset * -0.3}px)`, opacity: 1 - offset / 600
         }"
       />
     </div>
