@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import defaultLayout from '../layouts/defaultLayout.vue'
-import ImageBackground from '@/components/donation/imageBackground.vue';
+import NeveLayout from '../layouts/neveLayout.vue';
 import DonationForm from '@/components/donation/donateForm.vue'
 import { ref } from 'vue'
 const donateForm = ref(false)
 </script>
 
 <template>
-  <defaultLayout>
+  <NeveLayout>
     <div class="flex items-center justify-evenly h-[800px] text-white">
       <div v-if="!donateForm" class="flex flex-col gap-[10px]">
         <h1 class="text-[40px]">
@@ -43,6 +42,5 @@ const donateForm = ref(false)
         />
       </div>
     </div>
-  </defaultLayout>
-  <ImageBackground/>
+  </NeveLayout>
 </template>

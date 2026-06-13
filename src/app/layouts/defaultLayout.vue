@@ -6,12 +6,12 @@ import ImageBg from '@/components/base/imageBg.vue'
 
 <template>
   <div class="min-h-screen bg-[#070025] overflow-x-hidden">
-    <ImageBg/>
+    <ImageBg class="z-0 pointer-events-none"/>
     <div class="hidden md:block">
       <Navbar class="relative z-10 mt-10" />
     </div>
     <div class="block md:hidden">
-      <NavbarMobile/>
+      <NavbarMobile class="relative z-10 mt-10"/>
     </div>
     <main class="content">
       <slot />

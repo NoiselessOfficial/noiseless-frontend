@@ -35,7 +35,7 @@ function enviar() {
         </div>
       </transition>
       <EndForm />
-      <div class="flex justify-center items-center gap-10 mt-8">
+      <div class="flex justify-center items-center gap-5 md:gap-10 mt-8">
         <button class="bg-white/40 w-fit h-fit p-2 rounded-full cursor-pointer hover:scale-[110%]">
           <img src="https://www.google.com/favicon.ico" alt="Google" />
         </button>

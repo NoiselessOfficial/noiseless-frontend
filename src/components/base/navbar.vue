@@ -4,9 +4,9 @@ import { User } from 'lucide-vue-next'
 </script>
 
 <template>
-  <nav class="flex justify-evenly text-white mt-5 ">
+  <nav class="flex justify-evenly text-white mt-5 px-10">
     <RouterLink class="my-auto" to="/">
-      <div class="flex gap-5 mr-50">
+      <div class="flex gap-5 mr-50 md:mr-0">
         <img
           src="/images/nono.ico"
           alt=""

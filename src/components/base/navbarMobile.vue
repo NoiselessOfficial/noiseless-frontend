@@ -5,7 +5,7 @@ import { User } from 'lucide-vue-next'
 
 <template>
   <nav class="flex flex-col text-white mt-5 items-center gap-4">
-    <ul class="flex gap-6 text-[20px] items-center">
+    <ul class="flex text-[100%] items-center gap-4">
       <RouterLink class="my-auto" to="/">
         <div class="flex gap-5">
           <img
