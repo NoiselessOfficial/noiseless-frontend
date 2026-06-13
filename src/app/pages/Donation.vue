@@ -7,7 +7,7 @@ const donateForm = ref(false)
 
 <template>
   <NeveLayout>
-    <div class="flex flex-col md:flex-row h-170 lg:h-200 items-center justify-center gap-10 p-10 lg:gap-40 text-white">
+    <div class="flex flex-col h-170 overflow-hidden md:flex-row lg:h-200 items-center justify-center gap-10 p-10 lg:gap-40 text-white">
       <div v-if="!donateForm" class="flex flex-col gap-5">
         <h1 class="text-[40px]">
           Make a

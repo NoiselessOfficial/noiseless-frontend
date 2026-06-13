@@ -4,7 +4,7 @@ import NeveLayout from '../layouts/neveLayout.vue'
 </script>
 
 <template>
-  <NeveLayout>
+  <NeveLayout class="overflow-hidden">
     <BaseForm/>
   </NeveLayout>
 </template>
