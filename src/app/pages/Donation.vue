@@ -24,7 +24,7 @@ const donateForm = ref(false)
           class="no-underline text-[#7bdff6] hover:text-white cursor-pointer"
         >
           <div
-            class="flex items-center justify-evenly flex-row h-[60px] w-[240px] bg-[hsla(0, 0%, 100%, 0.199)] border border-white rounded-[20px] hover:drop-shadow-[0px_0px_16px_hsl(0,0%,100%)] transition duration-100 hover:animate-pulse"
+            class="flex items-center justify-evenly mx-auto md:m-0 flex-row h-[60px] w-[240px] bg-[hsla(0, 0%, 100%, 0.199)] border border-white rounded-[20px] hover:drop-shadow-[0px_0px_16px_hsl(0,0%,100%)] transition duration-100 hover:animate-pulse"
           >
             <img class="h-10 w-10" src="/images/cash.ico" alt="" />
             <h1 class="text-[40px]">Donate</h1>
