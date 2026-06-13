@@ -7,7 +7,7 @@ const donateForm = ref(false)
 
 <template>
   <NeveLayout>
-    <div class="flex h-170 lg:h-200 items-center justify-center md:gap-10 p-10 lg:gap-40 text-white">
+    <div class="flex flex-col md:flex-row h-170 lg:h-200 items-center justify-center gap-10 p-10 lg:gap-40 text-white">
       <div v-if="!donateForm" class="flex flex-col gap-5">
         <h1 class="text-[40px]">
           Make a
@@ -36,7 +36,7 @@ const donateForm = ref(false)
 
       <div class="nono">
         <img
-          class="h-auto w-100 hidden md:block drop-shadow-[0px_0px_30px_hsla(0,0%,100%,0.23)] hover:animate-pulse"
+          class="h-auto w-50 md:w-100 block drop-shadow-[0px_0px_30px_hsla(0,0%,100%,0.23)] hover:animate-pulse"
           src="/images/nono.ico"
           alt=""
         />
