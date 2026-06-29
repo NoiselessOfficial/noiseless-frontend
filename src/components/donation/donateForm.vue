@@ -30,9 +30,9 @@ const donate = () => {
     <span @click="exitDonateForm" class="transform -translate-y-[26px] -translate-x-[120px] text-[20px] cursor-pointer hover:text-[#7bdff6] hover:scale-[1.1] hover:drop-shadow-[0px_0px_6px_hsla(0,0%,100%)] transition duration-400"><- Back</-></span>
     <div class="flex justify-evenly w-[400px]">
       <DonateRadio gateway="mercadopago" h="40px" w="90px" v-model="gateway" image="/images/Donation/Gateways/mercadopago.png" />
-      <DonateRadio gateway="paypal" h="40px" w="40px" v-model="gateway" image="/images/Donation/Gateways/paypal.png" />
-      <DonateRadio gateway="stripe" h="70px" w="70px" v-model="gateway" image="/images/Donation/Gateways/stripe.png" />
-      <DonateRadio gateway="pix" h="80px" w="80px" v-model="gateway" image="/images/Donation/Gateways/pix.png" />
+      <DonateRadio disabled gateway="paypal" h="40px" w="40px" v-model="gateway" image="/images/Donation/Gateways/paypal.png" />
+      <DonateRadio disabled gateway="stripe" h="70px" w="70px" v-model="gateway" image="/images/Donation/Gateways/stripe.png" />
+      <DonateRadio disabled gateway="pix" h="80px" w="80px" v-model="gateway" image="/images/Donation/Gateways/pix.png" />
     </div>
     <div class="flex flex-col justify-center h-[200px] w-[330px] gap-6">
         <input type="email" v-model="email" placeholder="E-mail address" class="h-[46px] p-2 border-[1px] rounded-[10px] outline-none" />

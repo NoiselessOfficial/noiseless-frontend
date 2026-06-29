@@ -4,6 +4,7 @@ const props = defineProps<{
   image: string
   h: string
   w: string
+  disabled?: boolean
 }>()
 
 const model = defineModel<string>();
@@ -11,13 +12,15 @@ const model = defineModel<string>();
 
 <template>
   <label
-    class="flex justify-center items-center h-[60px] w-[85px] cursor-pointer bg-[hsla(0,0%,100%,0.20)] border-[1px] rounded-[10px] hover:bg-[hsla(0,0%,100%,0.40)] transition duration-400"
+    class="flex justify-center items-center h-[60px] w-[85px] rounded-[10px] border-[1px] bg-[hsla(0,0%,100%,0.20)] transition duration-400"
+    :class="props.disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:bg-[hsla(0,0%,100%,0.40)]'"
   >
     <input
       class="peer sr-only"
       type="radio"
       name="gateway"
       :value="gateway"
+      :disabled="props.disabled"
       v-model="model"
     />
     <img

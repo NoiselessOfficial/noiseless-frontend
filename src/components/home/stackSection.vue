@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Users, Coffee, AudioWaveform, Layout } from 'lucide-vue-next'
+import { Braces, Coffee, AudioWaveform, Layout } from 'lucide-vue-next'
 import { CardTec } from '@/components/ui/card';
 </script>
 
@@ -21,9 +21,9 @@ import { CardTec } from '@/components/ui/card';
       :icone="AudioWaveform"
     />
     <CardTec
-      titulo="XXXXX"
-      descricao="XXXXXXXXX"
-      :icone="Users"
+      titulo="C"
+      descricao="Is a language that allows for low-level memory access, useful for calculations and high performance"
+      :icone="Braces"
     />
   </section>
 </template>
