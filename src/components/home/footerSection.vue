@@ -17,14 +17,18 @@ import { socialMedias } from '@/constants/links';
         Noiseless
       </p>
     </div>
-    <div class="text-white flex gap-10 flex-col lg:flex-row">
+    <div class="text-white flex gap-10 flex-col lg:flex-row text-[80%]">
       <div class="flex gap-2">
         <Mail />
-        <a href="mailto:noiselessofficial@outlook.com">noiselessofficial@outlook.com</a>
+        <a :href="socialMedias.email">noiselessofficial@outlook.com</a>
       </div>
       <div class="flex gap-2">
         <Github />
-        <a href="https://github.com/NoiselessOfficial">NoiselessOfficial</a>
+        <a :href="socialMedias.github">NoiselessOfficial</a>
+      </div>
+      <div class="flex gap-2">
+        <Instagram />
+        <a :href="socialMedias.instagram">NoiselessOfficial</a>
       </div>
     </div>
   </div>
