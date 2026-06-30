@@ -26,10 +26,6 @@ import { socialMedias } from '@/constants/links';
         <Github />
         <a :href="socialMedias.github">NoiselessOfficial</a>
       </div>
-      <div class="flex gap-2">
-        <Instagram />
-        <a :href="socialMedias.instagram">NoiselessOfficial</a>
-      </div>
     </div>
   </div>
 </template>
