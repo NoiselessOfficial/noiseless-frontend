@@ -25,15 +25,6 @@ import { User } from 'lucide-vue-next'
       <NavItem to="/donate" active-class="text-[#7bdff6]" class="py-1"
         >Donate</NavItem
       >
-      <li>|</li>
-      <!-- Verificação de ID do usuário para exibir opções de login e cadastro -->
-      <NavItem
-        to="/auth"
-        class="my-auto border-2 border-white p-1 rounded-full transition-all duration-300 hover:border-[#7bdff6]"
-        active-class="!border-[#7bdff6] text-[#7bdff6]"
-      >
-        <User />
-      </NavItem>
     </ul>
   </nav>
 </template>
