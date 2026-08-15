@@ -23,6 +23,10 @@ onUnmounted(() => {
 <template>
   <section class="w-full min-h-[70vh] flex flex-col lg:flex-row items-center mt-10 lg:mt-0">
 
+    <!-- SHADOW DIV -->
+    <div  class="flex items-center ml- w-full h-1/2 absolute">
+      <div class="w-160 h-full bg-white/10 blur-[100px]"></div>
+    </div>
     <div
       class="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 lg:py-12"
       :style="{
@@ -34,7 +38,7 @@ onUnmounted(() => {
       >
         <Users class="w-4 h-4 text-white" />
         <h1 class="text-sm md:text-base text-white">
-          Helping +200 persons
+          Helping up to 20% of the population sensitive to sound.
         </h1>
       </div>
 
@@ -49,11 +53,10 @@ onUnmounted(() => {
       </h1>
 
       <h2 class="text-sm md:text-base text-white/70 mt-3 max-w-xl">
-        Made for Misophonic people, Noiseless is a software that improves your
-        listening in your routine.
+        Noiseless is a software focused on assisting those impacted by misophonia (estimated 5-20% of adults).
       </h2>
 
-      <div class="flex gap-4 mt-10">
+      <div class="flex gap-10 mt-10">
         <CardHome
           class=""
           titulo="Upload"
@@ -75,11 +78,11 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
+    <div class="w-full lg:w-1/2 flex justify-end items-center relative">
       <img
         src="/images/laptop.png"
         alt="laptop"
-        class="w-full "
+        class="w-10/12 mt-8 mr-8 drop-shadow-[0px_0px_26px_hsl(0,0%,80%)]"
         :style="{
           transform: `translateY(${offset * -0.3}px)`, opacity: 1 - offset / 600
         }"

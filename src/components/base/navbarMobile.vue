@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import NavItem from '@/components/base/navItem.vue'
-import { User } from 'lucide-vue-next'
+import { useRoute } from 'vue-router'
+const route = useRoute()
 </script>
 
 <template>
   <nav class="flex flex-col text-white mt-5 items-center gap-4">
-    <ul class="flex text-[100%] items-center gap-4">
-      <RouterLink class="my-auto" to="/">
+    <ul class="flex text-[100%] items-center gap-10">
+      <RouterLink v-if="route.path !== '/'" class="my-auto" to="/">
         <div class="flex gap-5">
           <img
             src="/images/nono.ico"
@@ -21,8 +22,7 @@ import { User } from 'lucide-vue-next'
           >Docs</span
         ></a
       >
-      <li>|</li>
-      <NavItem to="/donate" active-class="text-[#7bdff6]" class="py-1"
+      <NavItem v-if="route.path !== '/donate'" to="/donate" active-class="text-[#7bdff6]" class="py-1"
         >Donate</NavItem
       >
     </ul>
