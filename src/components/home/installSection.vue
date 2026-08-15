@@ -10,9 +10,9 @@ import { Button, Title } from '@/components/ui';
       Open source misophonia <br />
       software
     </h1>
-    <Button variant="v1" class="mt-10 text-2xl md:text-4xl text-[#070025]">
+    <Button variant="v1" class="mt-10 text-2xl md:text-4xl text-[#070025] hover:drop-shadow-[0px_0px_10px_#b1ecf9]">
       Install Now!
     </Button>
-    <Title variant="v1" class="m-auto mt-15 mb-30"> Technologies </Title>
+    <Title variant="v1" class="m-auto mt-35 mb-20"> Technologies </Title>
   </section>
 </template>
