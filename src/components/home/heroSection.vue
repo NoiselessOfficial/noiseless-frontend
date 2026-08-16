@@ -23,7 +23,6 @@ onUnmounted(() => {
 <template>
   <section class="w-full min-h-[70vh] flex flex-col lg:flex-row items-center mt-10 lg:mt-0">
 
-    <!-- SHADOW DIV -->
     <div  class="flex items-center ml- w-full h-1/2 absolute">
       <div class="w-160 h-full bg-white/10 blur-[100px]"></div>
     </div>
@@ -78,7 +77,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="w-full lg:w-1/2 flex justify-end items-center relative">
+    <div class="w-full lg:w-1/2 flex justify-end items-center relative mt-10">
       <img
         src="/images/laptop.png"
         alt="laptop"
