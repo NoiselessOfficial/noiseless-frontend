@@ -12,7 +12,7 @@ const donateForm = ref(false)
         <h1 class="text-[40px]">
           Make a
           <a
-            @click="donateForm = true"
+            @click="donateForm = false"
             class="no-underline text-[#7bdff6] cursor-pointer"
             >Donation</a
           >
