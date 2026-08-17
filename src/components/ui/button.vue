@@ -1,5 +1,5 @@
 <template>
-  <button :class="['btn', variant]" type="button" class="cursor-pointer transition-all duration-300">
+  <button :class="['btn', variant]" type="button" class="cursor-not-allowed transition-all duration-300">
     <slot class="content" />
   </button>
 </template>
@@ -15,7 +15,6 @@ defineProps<{
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   font-weight: 1000;
 }
 
