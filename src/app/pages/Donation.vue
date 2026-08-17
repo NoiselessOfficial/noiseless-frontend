@@ -12,14 +12,14 @@ const donateForm = ref(false)
         <h1 class="text-[40px]">
           Make a
           <a
-            @click="donateForm = true"
+            @click="donateForm = false"
             class="no-underline text-[#7bdff6] cursor-pointer"
             >Donation</a
           >
         </h1>
-        <h5>Help us to make the best experience ever.</h5>
+        <h5 class="w-90">We are not currently accepting donations, but you can help us by spreading the word about the project.</h5>
 
-        <a
+        <!-- <a
           @click="donateForm = true"
           class="no-underline text-[#7bdff6] hover:text-white cursor-pointer"
         >
@@ -29,7 +29,7 @@ const donateForm = ref(false)
             <img class="h-10 w-10" src="/images/cash.ico" alt="" />
             <h1 class="text-[40px]">Donate</h1>
           </div>
-        </a>
+        </a> -->
       </div>
 
       <DonationForm v-if="donateForm" v-model:active="donateForm" />

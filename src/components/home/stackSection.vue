@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { Braces, Coffee, CirclePower, Layout } from 'lucide-vue-next'
-import { CardTec } from '@/components/ui/card';
+import { CardTec } from '@/components/ui/card'
+import { Title } from '@/components/ui'
 </script>
 
 <template>
-  <section class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 w-4/5 m-auto drop-shadow-[0px_0px_20px_hsl(0,0%,50%)]">
+  <Title variant="v1" class="m-auto mb-20 mt-20 drop-shadow-[0px_0px_26px_hsl(0,0%,80%)]">Technologies</Title>
+  <section
+    class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 w-4/5 m-auto drop-shadow-[0px_0px_20px_hsl(0,0%,50%)]"
+  >
     <CardTec
       titulo="Java"
       descricao="Java is a high-level object-oriented language which provides a fully cross-platform development with WORA."
